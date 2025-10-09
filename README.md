@@ -79,11 +79,6 @@ Contributions are always welcome! If you find a bug or have a suggestion, please
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
----
 
 ## 📞 Contact
 
