@@ -14,7 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Hash the password for security
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-    // Prepare and execute the SQL query to insert a new user
     $sql = "INSERT INTO users (name, email, mobile, city, password) VALUES (?, ?, ?, ?, ?)";
     
     // Use a prepared statement to prevent SQL injection
@@ -27,7 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Registration successful, redirect to login page
             header("location: login.php?message=success");
             exit;
-        } else {
+        } else { 
+
             // Error occurred
             echo "Error: " . $stmt->error;
         }
