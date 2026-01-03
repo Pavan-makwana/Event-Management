@@ -1,7 +1,7 @@
 <?php
 include '../config.php';
 
-// Check if the form was submitted
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Retrieve form data
