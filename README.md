@@ -23,7 +23,7 @@
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 
@@ -51,7 +51,7 @@ You must have a local server environment (like XAMPP, MAMP, or Docker) with the 
     $host = 'localhost';
     $db   = 'event_db';
     $user = 'root';
-    $pass = 'your_strong_password'; // CHANGE THIS!
+    $pass = 'your_strong_password'; 
     // ...
     ```
 
