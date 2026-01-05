@@ -2,7 +2,6 @@
 include '../config.php';
 include '../includes/header.php';
 
-// Check if the user is logged in. If not, redirect them to the login page.
 if (!isset($_SESSION['user_id'])) {
     header("Location: ../auth/login.php");
     exit;
@@ -34,7 +33,6 @@ if ($stmt = $conn->prepare($sql)) {
     $stmt->close();
 }
 
-// NEW: Fetch packages for the current event
 $sql_packages = "SELECT id, package_name, price FROM event_packages WHERE event_id = ?";
 $stmt_packages = $conn->prepare($sql_packages);
 $stmt_packages->bind_param("i", $event_id);
